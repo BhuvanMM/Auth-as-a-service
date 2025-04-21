@@ -1,0 +1,26 @@
+type User {
+  id: String!
+  email: String!
+}
+
+type Token {
+  accessToken: String!
+  refreshToken: String!
+}
+
+type Session {
+  email: String!
+  source: String!
+  timestamp: String!
+}
+
+type Query {
+  getUser(email: String!): User
+  getSessions(email: String!): [Session!]!
+}
+
+type Mutation {
+  signup(email: String!, password: String!): User
+  login(email: String!, password: String!): Token
+  googleLogin(token: String!): Token
+}
