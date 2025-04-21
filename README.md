@@ -54,7 +54,7 @@ auth-as-a-service/
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/auth-as-a-service.git
+git clone https://github.com/BhuvanMM/auth-as-a-service.git
 cd auth-as-a-service
 
 # Start the user service
